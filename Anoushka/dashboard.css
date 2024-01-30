@@ -158,6 +158,10 @@ header .logo img{
     width: 50px;
 }
 
+.name-web h1{
+    color: var(--color-white);
+}
+
 .navigation a{
     position: relative;
     font-size: 1.1em;
