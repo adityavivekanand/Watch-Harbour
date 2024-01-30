@@ -95,9 +95,16 @@ small{
     font-size: 0.75rem;
 }
 
-.profile-photo{
-    width: 2.8rem;
-    height: 2.8rem;
+ .update .profile-photo{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item .profile-photo{
+    width: 5.4rem;
+    /* height: 4.5rem; */
     border-radius: 50%;
     overflow: hidden;
 }
