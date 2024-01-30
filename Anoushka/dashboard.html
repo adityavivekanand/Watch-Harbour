@@ -5,219 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"> -->
+      <link rel="stylesheet" 
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="Watchharbour Logo crop.jpg">
-                    <h2>WatchHarbour</h2>
-                </div>
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">close</span>
-                </div>
-            </div>
-            <div class="sidebar">
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#" class="active">
-                    <span class="material-icons-sharp">person_outline</span>
-                    <h3>Customers</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">receipt_long</span>
-                    <h3>Orders</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">insights</span>
-                    <h3>Analytics</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">mail_outline</span>
-                    <h3>Messages</h3>
-                    <span class="message-count">26</span>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">inventory</span>
-                    <h3>Products</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">report</span>
-                    <h3>Reports</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">settings</span>
-                    <h3>Settings</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">add</span>
-                    <h3>Add Products</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">logout</span>
-                    <h3>Logout</h3>
-                </a>
-            </div>
-        </aside>
-        <!-- End of Aside -->
+        <header> 
+            <div class="logo">
+                <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/Watchharbour%20Logo%20crop.jpg">
+                <!-- <h2>WatchHarbour</h2> -->
+            </div>    
+            <nav class="navigation">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Latest Posts</a>
+              <a href="#">Logout</a>
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="material-symbols-outlined">search</span></button>
+              <!-- <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="material-symbols-outlined">search</span></button>
+              </form> -->
+            </nav>
+        </header>
+
         <main>
             <h1>Dashboard</h1>
-            <div class="date">
-                <input type="date">
-            </div>
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-icons-sharp">analytics</span>
+            <div class="cards">
+                <div class="edit">
+                    <span class="material-symbols-outlined">movie_edit</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Total Sales</h3>
-                            <h1>$25,024</h1>
+                            <h1>Edit</h1>
+                            <h1>Watched</h1>
                         </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
+                        <button class="btnLogin-popup">
+                            <a href="#">Movies</a>
+                        </button>
+                        <button class="btnLogin-popup">
+                            <a href="#">TV Shows</a>
+                        </button>
                     </div>
-                    <small class="text-muted">Last 24 hours</small>
                 </div>
 
-                <div class="expenses">
-                    <span class="material-icons-sharp">bar_chart</span>
+                <div class="add">
+                    <span class="material-symbols-outlined">add_circle</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Total Expenses</h3>
-                            <h1>$14,160</h1>
+                            <h1>Add</h1>
+                            <h1>New</h1>
                         </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>62%</p>
-                            </div>
+                        <div class="btn-group">
+                            <button class="btnLogin-popup">
+                                <a href="#">Movies</a>
+                            </button>
+                            <button class="btnLogin-popup">
+                                <a href="#">TV Shows</a>
+                            </button>
                         </div>
                     </div>
-                    <small class="text-muted">Last 24 hours</small>
                 </div>
 
-                <div class="income">
-                    <span class="material-icons-sharp">stacked_line_chart</span>
+                <div class="recommend">
+                    <span class="material-symbols-outlined">recommend</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Total income</h3>
-                            <h1>$10,864</h1>
+                            <h1>Recommend</h1>
+                            <h1>More</h1>
                         </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>44%</p>
-                            </div>
-                        </div>
+                        <button class="btnLogin-popup">
+                            <a href="#">Movies</a>
+                        </button>
+                        <button class="btnLogin-popup">
+                            <a href="#">TV Shows</a>
+                        </button>
                     </div>
-                    <small class="text-muted">Last 24 hours</small>
                 </div>
+
             </div>
 
-            <div class="recent-order">
-                <h2>Recent Orders</h2>
+            <div class="most-liked">
+                <h2>Favourites</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Product Number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
+                            <th>Ranking</th>
+                            <th>Name</th>
+                            <th>Movie or Show?</th>
+                            <th>Release Year</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Foldable mini drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>1.</td>
+                            <td>The Office</td>
+                            <td>Show</td>
+                            <td>12005</td>
+                            <td><a href="#">Details</a></td>
                         </tr>
                         <tr>
-                            <td>Foldable mini drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>2.</td>
+                            <td>The Godfather</td>
+                            <td>Movie</td>
+                            <td>1972</td>
+                            <td><a href="#">Details</a></td>
                         </tr>
                         <tr>
-                            <td>Foldable mini drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>3.</td>
+                            <td>The Simpsons</td>
+                            <td>Show</td>
+                            <td>1989</td>
+                            <td><a href="#">Details</a></td>
                         </tr>
                         <tr>
-                            <td>Foldable mini drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>4.</td>
+                            <td>Farzi</td>
+                            <td>Show</td>
+                            <td>2023</td>
+                            <td><a href="#">Details</a></td>
                         </tr>
                         <tr>
-                            <td>Foldable mini drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>5.</td>
+                            <td>Friends</td>
+                            <td>Show</td>
+                            <td>1994</td>
+                            <td><a href="#">Details</a></td>
                         </tr>
                         <tr>
-                            <td>Foldable mini drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>6.</td>
+                            <td>Spider-Man: No Way Home</td>
+                            <td>Movie</td>
+                            <td>2021</td>
+                            <td><a href="#">Details</a></td>
                         </tr>
                     </tbody>
                 </table>
-                <a href="#">Show All</a>
+                <div class="show-review">
+                    <div>
+                        <h3><a href="#">Show All</a></h3>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- End of main -->
 
         <div class="right">
             <div class="top">
-                <button id="menu-btn">
+                <!-- <button id="menu-btn">
                     <span class="material-icons-sharp">menu</span>
-                </button>
-                <div class="theme-toggle">
-                    <span class="material-icons-sharp active">light_mode</span>
-                    <span class="material-icons-sharp">dark_mode</span>
-                </div>
-                <div class="profile">
+                </button> -->
+                <!-- <div class="profile">
                     <div class="info">
                         <p>Hey, <b>Daniel</b></p>
                         <small class="text-muted">Admin</small>
                     </div>
                     <div class="profile-photo">
-                        <img src="default.jpeg">
+                        <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/default.jpeg">
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="recent-updates">
-                <h2>Recent Updates</h2>
+                <h2>Recent Reviews</h2>
                 <div class="updates">
                     <div class="update">
                         <div class="profile-photo">
-                            <img src="Watchharbour Logo crop.jpg">
+                            <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/profile1.jpeg">
                         </div>
                         <div class="message">
                             <p><b>Mike Tyson</b> received his order of Night lion GPS drone.</p>
@@ -226,7 +183,7 @@
                     </div>
                     <div class="update">
                         <div class="profile-photo">
-                            <img src="default.jpeg">
+                            <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/profile2.jpeg">
                         </div>
                         <div class="message">
                             <p><b>Mike Tyson</b> received his order of Night lion GPS drone.</p>
@@ -235,7 +192,7 @@
                     </div>
                     <div class="update">
                         <div class="profile-photo">
-                            <img src="Watchharbour Logo crop.jpg">
+                            <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/profile3.jpeg">
                         </div>
                         <div class="message">
                             <p><b>Mike Tyson</b> received his order of Night lion GPS drone.</p>
@@ -246,51 +203,44 @@
             </div>
             <!-- End of recent updates -->
 
-            <div class="sales-analytics">
-                <h2>Sales Analytics</h2>
-                <div class="item online">
-                    <div class="icon">
-                        <span class="material-icons-sharp">shopping_cart</span>
+            <div class="my-reviews">
+                <h2>My Reviews</h2>
+                <div class="item">
+                    <div class="profile-photo">
+                        <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/profile3.jpeg">
                     </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>Online Orders</h3>
-                            <small class="text-muted">Last 24 hours</small>
-                        </div>
-                        <h5 class="success">+39%</h5>
-                        <h3>3849</h3>
+                    <div class="message">
+                        <p><b>Mike Tyson</b> received his order of Night lion GPS drone.</p>
+                        <small class="text-muted">2 minutes ago</small>
                     </div>
                 </div>
-                <div class="item offline">
-                    <div class="icon">
-                        <span class="material-icons-sharp">local_mall</span>
+
+                <!-- instead of coding the same block thrice, display latest 2 reviews.
+                    Used div to display column wise  -->
+                <div class="item">
+                    <div class="profile-photo">
+                        <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/profile3.jpeg">
                     </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>Offline Orders</h3>
-                            <small class="text-muted">Last 24 hours</small>
-                        </div>
-                        <h5 class="danger">-17%</h5>
-                        <h3>1100</h3>
-                    </div>
-                </div>
-                <div class="item customers">
-                    <div class="icon">
-                        <span class="material-icons-sharp">person</span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>New Customers</h3>
-                            <small class="text-muted">Last 24 hours</small>
-                        </div>
-                        <h5 class="success">+25%</h5>
-                        <h3>849</h3>
+                    <div class="message">
+                        <p><b>Mike Tyson</b> received his order of Night lion GPS drone.</p>
+                        <small class="text-muted">2 minutes ago</small>
                     </div>
                 </div>
-                <div class="item add-product">
+                <div class="item">
+                    <div class="profile-photo">
+                        <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/profile3.jpeg">
+                    </div>
+                    <div class="message">
+                        <p><b>Mike Tyson</b> received his order of Night lion GPS drone.</p>
+                        <small class="text-muted">2 minutes ago</small>
+                    </div>
+                </div>
+                <!-- End my reviews -->
+
+                <div class="item add-review">
                     <div>
-                        <span class="material-icons-sharp">add</span>
-                        <h3>Add Product</h3>
+                        <span class="material-symbols-outlined">add</span>
+                        <a href="#"><h3>Add review</h3></a>
                     </div>
                 </div>
             </div>
