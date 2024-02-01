@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Website Clone</title>
-    <link rel="stylesheet" href="homepage.css">
+    <title>WatchHarbour</title>
+    <!-- <link rel="stylesheet" href="homepage.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css')}}">
 </head>
 <body>
     <div class="header">
         <nav>
-            <img src="Watchharbour Logo.jpg" class="logo">
+            <img src="{{ url_for('static', filename='images/Watchharbour Logo crop.jpg')}}" class="logo">
             <div>
-                <button><a href="login.html">Log In</a></button>
-                <button><a href="register.html">Sign Up</a></button>
+                <button><a href="{{ url_for('login')}}">Log In</a></button>
+                <button><a href="{{ url_for('register')}}">Sign Up</a></button>
             </div>
         </nav>
         <div class="header-content">
@@ -20,7 +21,7 @@
             <h3>Your very own binge destination with personalized recommendations and a Binge Diary!</h3>
             <form class="email-signup">
                 <input type="email" placeholder="Email address" required>
-                <button type="submit"><a href="login.html">Get Started</a></button>
+                <button type="submit"><a href="{{ url_for('login')}}">Get Started</a></button>
             </form>
         </div>
     </div>
