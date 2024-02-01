@@ -20,4 +20,4 @@ def forgot_password():
     return render_template('forgot_password.html')
 
 if __name__ == 'main':
-    app.run(debug=True)
+    app.run(debug=False)
