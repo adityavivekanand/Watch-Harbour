@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Request</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='forms.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body id="forgot_request">
+    <div class="content-section">
+        <form method="POST" action="">
+            <!-- {{ form.hidden_tag() }} -->
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Reset Request</legend>
+                <div class="form-group">
+                    {% if form.email.errors %}
+                        <div class="input-group">
+                            {{ form.email(placeholder="Email", class="form-control form-control-lg is-invalid") }}
+                            <div class="input-icon">
+                                <span class="input-group-text"><i class='bx bxs-envelope'></i></span>
+                            </div>
+                        </div>
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="input-group">
+                            {{ form.email(placeholder="Email", class="form-control form-control-lg") }}
+                            <div class="input-icon">
+                                <span class="input-group-text"><i class='bx bxs-envelope'></i></span>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+
+            </fieldset>
+            <div class="btn">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+</body>
+</html>

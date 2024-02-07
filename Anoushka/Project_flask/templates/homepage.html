@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WatchHarbour</title>
-    <!-- <link rel="stylesheet" href="homepage.css"> -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css')}}">
 </head>
 <body>
-    <div class="header">
+    <div class="header" background-image="url(static\images\background.jpg)" >
         <nav>
             <img src="{{ url_for('static', filename='images/Watchharbour Logo crop.jpg')}}" class="logo">
             <div>
@@ -19,9 +18,9 @@
         <div class="header-content">
             <h1>Watch Harbour</h1>
             <h3>Your very own binge destination with personalized recommendations and a Binge Diary!</h3>
-            <form class="email-signup">
-                <input type="email" placeholder="Email address" required>
-                <button type="submit"><a href="{{ url_for('login')}}">Get Started</a></button>
+            <form class="email-signup" action="{{ url_for('get_started') }}" method="POST">
+                <input type="text" placeholder="Username" name="username" id="username" required>
+                <button type="submit">Get Started</button>
             </form>
         </div>
     </div>
