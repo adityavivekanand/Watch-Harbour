@@ -10,7 +10,7 @@
 <body id="reset_token">
     <div class="content-section">
         <form method="POST" action="">
-            {{ form.hidden_tag() }}
+            <!-- {{ form.hidden_tag() }} -->
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Reset Password</legend>
                 <div class="form-group">
@@ -28,7 +28,7 @@
                         </div>
                     {% else %}
                         <div class="input-group">
-                            {{ form.password(placeholder=" New Password", class="form-control form-control-lg") }}
+                            {{ form.password(placeholder="New Password", class="form-control form-control-lg") }}
                             <div class="input-icon">
                                 <span class="input-group-text"><i class='bx bxs-lock-open-alt'></i></span>
                             </div>
