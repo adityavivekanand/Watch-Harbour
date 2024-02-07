@@ -2,10 +2,14 @@ from flask import Flask, render_template, redirect, url_for, request
 
 app = Flask(__name__)
 
+#@app.route('/')
+# @app.route('/homepage')
+# def homepage():
+#     return render_template('homepage.html')
+
 @app.route('/')
-@app.route('/homepage')
-def homepage():
-    return render_template('homepage.html')
+def dashboard():
+     return render_template('dashboard.html')
 
 @app.route('/login')
 def login():

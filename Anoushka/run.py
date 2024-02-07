@@ -3,6 +3,9 @@ from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 @app.route('/')
+def dashboard():
+     return render_template('dashboard.html')
+
 @app.route('/homepage')
 def home():
     return render_template('homepage.html')
