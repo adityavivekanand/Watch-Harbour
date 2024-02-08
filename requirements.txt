@@ -1,0 +1,4 @@
+streamlit
+pickle
+requests
+streamlit.components.v1
