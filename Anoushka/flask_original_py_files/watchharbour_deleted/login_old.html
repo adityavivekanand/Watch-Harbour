@@ -10,50 +10,63 @@
 <body id="login">
     <div class="content-section">
         <form method="POST" action="">
+            <!-- {{ form.hidden_tag() }} -->
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Log In</legend>
                 <div class="form-group">
+                    {% if form.username.errors %}
                         <div class="input-group">
+                            {{ form.username(placeholder="Username", class="form-control form-control-lg is-invalid") }}
                             <div class="input-icon">
                                 <span class="input-group-text"><i class='bx bxs-user'></i></span>
                             </div>
                         </div>
                         <div class="invalid-feedback">
-                            
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
                         </div>
-                        <!-- <div class="input-group" >
+                    {% else %}
+                        <div class="input-group">
+                            {{ form.username(placeholder="Username", class="form-control form-control-lg is-invalid") }}
                             <div class="input-icon">
                                 <span class="input-group-text"><i class='bx bxs-user'></i></span>
                             </div>
-                        </div> -->
-                    <input type="'text" class="input" name="username" placeholder="Username" required="required" value="{{request.form.username}}">
-                    <span class="input-group-text"><i class='bx bxs-user'></i></span>
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="form-group">
-                    <!-- 
+                    {% if form.password.errors %}
                         <div class="input-group">
+                            {{ form.password(placeholder="Password", class="form-control form-control-lg is-invalid") }}
                             <div class="input-icon">
                                 <span class="input-group-text"><i class='bx bxs-lock-open-alt'></i></span>
                             </div>
                         </div>
                         <div class="invalid-feedback">
-                            
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
                         </div>
+                    {% else %}
                         <div class="input-group">
+                            {{ form.password(placeholder="Password", class="form-control form-control-lg is-invalid") }}
+                            <div class="input-icon">
                                 <span class="input-group-text"><i class='bx bxs-lock-open-alt'></i></span>
                             </div>
-                        </div>-->
-                    <input type="password" class="input" name="password" placeholder="Password" required="required" value="{{request.form.password}}">
-                    <span class="input-group-text"><i class='bx bxs-lock-open-alt'></i></span>
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="form-check">
-                   <div id="redirect">
+                    {{ form.remember(class="form-check-input") }}
+                    {{ form.remember.label(class="form-check-label") }}
+                    <div id="redirect">
                         <a href="{{ url_for('reset_request') }}">Forgot Password?</a>
                     </div>
                 </div>
             </fieldset>
             <div class="btn">
-                <button type="submit" class="btn btn-outline-info">Login</button>
+                {{ form.submit(class="btn btn-outline-info") }}
             </div>
         </form>
         <div id="redirect">

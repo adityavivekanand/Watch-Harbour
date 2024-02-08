@@ -19,7 +19,8 @@
             <h1>Watch Harbour</h1>
             <h3>Your very own binge destination with personalized recommendations and a Binge Diary!</h3>
             <form class="email-signup" action="{{ url_for('get_started') }}" method="POST">
-                <input type="text" placeholder="Username" name="username" id="username" required>
+                <!-- <input type="text" placeholder="Username" name="username" id="username" required> -->
+                <input type="'text" class="input" name="username" placeholder="Username" required="required" value="{{request.form.username}}">
                 <button type="submit">Get Started</button>
             </form>
         </div>
