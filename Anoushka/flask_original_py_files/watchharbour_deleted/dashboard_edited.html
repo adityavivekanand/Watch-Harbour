@@ -44,7 +44,10 @@
                             <h1>Watched</h1>
                         </div>
                         <button class="btnLogin-popup">
-                            <a href="{{url_for('edit_watched')}}">Movies</a>
+                            <a href="#">Movies</a>
+                        </button>
+                        <button class="btnLogin-popup">
+                            <a href="#">TV Shows</a>
                         </button>
                     </div>
                 </div>
@@ -60,6 +63,9 @@
                             <button class="btnLogin-popup">
                                 <a href="{{url_for('add_movies')}}">Movies</a>
                             </button>
+                            <button class="btnLogin-popup">
+                                <a href="#">TV Shows</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +78,10 @@
                             <h1>More</h1>
                         </div>
                         <button class="btnLogin-popup">
-                            <a href="#">Movies</a>
+                            <a href="{{url_for('edit_watched')}}">Movies</a>
+                        </button>
+                        <button class="btnLogin-popup">
+                            <a href="#">TV Shows</a>
                         </button>
                     </div>
                 </div>
@@ -80,7 +89,7 @@
             </div>
 
             <div class="most-liked">
-                <h2>Most Watched</h2>
+                <h2>Favourites</h2>
                 <table>
                     <thead>
                         <tr>
@@ -88,6 +97,7 @@
                             <th>Name</th>
                             <th>Movie or Show?</th>
                             <th>Release Year</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -96,54 +106,61 @@
                             <td>The Office</td>
                             <td>Show</td>
                             <td>2005</td>
+                            <td><a href="https://www.imdb.com/title/tt0386676/">Details</a></td>
                         </tr>
                         <tr>
                             <td>2.</td>
                             <td>The Godfather</td>
                             <td>Movie</td>
                             <td>1972</td>
+                            <td><a href="https://www.imdb.com/title/tt0068646/">Details</a></td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td>The Simpsons</td>
                             <td>Show</td>
                             <td>1989</td>
+                            <td><a href="https://www.imdb.com/title/tt0096697/">Details</a></td>
                         </tr>
                         <tr>
                             <td>4.</td>
                             <td>Farzi</td>
                             <td>Show</td>
                             <td>2023</td>
+                            <td><a href="https://www.imdb.com/title/tt15477488/">Details</a></td>
                         </tr>
                         <tr>
                             <td>5.</td>
                             <td>Friends</td>
                             <td>Show</td>
                             <td>1994</td>
+                            <td><a href="https://www.imdb.com/title/tt0108778/">Details</a></td>
                         </tr>
                         <tr>
                             <td>6.</td>
                             <td>Spider-Man: No Way homepage</td>
                             <td>Movie</td>
                             <td>2021</td>
+                            <td><a href="https://www.imdb.com/title/tt10872600/">Details</a></td>
                         </tr>
                     </tbody>
                 </table>
-                <!-- <div class="show-review">
+                <div class="show-review">
                     <div>
                         <h3><a href="https://www.imdb.com/list/ls053826112/">Show All</a></h3>
+                        <!-- Display IMDb rankings maybe -->
                     </div>
-                </div> -->
+                </div>
             </div>
         </main>
         <!-- End of main -->
 
         <div class="right">
-            <!-- <div class="top">
-                <button id="menu-btn">
+            <div class="top">
+                <!-- <button id="menu-btn">
                     <span class="material-icons-sharp">menu</span>
-                </button>
-                <div class="profile">
+                </button> -->
+                <!-- <div class="profile">
                     <div class="info">
                         <p>Hey, <b>Daniel</b></p>
                         <small class="text-muted">Admin</small>
@@ -151,8 +168,8 @@
                     <div class="profile-photo">
                         <img src="https://github.com/Anoushka1009/Watch-Harbour/blob/main/Anoushka/images/default.jpeg">
                     </div>
-                </div>
-            </div> -->
+                </div> -->
+            </div>
 
             <div class="recent-updates">
                 <h2>Recent Reviews</h2>
@@ -213,12 +230,12 @@
                 </div>
                 <!-- End my reviews -->
 
-                <!-- <div class="item add-review">
+                <div class="item add-review">
                     <div>
                         <span class="material-symbols-outlined">add</span>
                         <a href="#"><h3>Add review</h3></a>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

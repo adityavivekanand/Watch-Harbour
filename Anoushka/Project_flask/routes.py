@@ -2,7 +2,7 @@ from flask import render_template, url_for, flash, redirect, request
 from Project_flask import app, db
 from Project_flask.forms import RegistrationForm
 from Project_flask.models import User
-from flask_login import logout_user, login_required
+from flask_login import logout_user
 from passlib.hash import sha256_crypt
 
 @app.route("/")
@@ -10,8 +10,15 @@ from passlib.hash import sha256_crypt
 def homepage():
     return render_template('homepage.html')
 
+@app.route("/edit_watched")
+def edit_watched():
+    return render_template('edit_watched.html')
+
+@app.route("/add_movies")
+def add_movies():
+    return render_template('add_movies.html')
+
 @app.route("/dashboard")
-@login_required
 def dashboard():
     return render_template('dashboard.html')
 

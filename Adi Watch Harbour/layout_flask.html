@@ -27,9 +27,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggle">
                   <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+                    <a class="nav-item nav-link" href="{{ url_for('homepage') }}">homepage</a>
                     <!-- <a class="nav-item nav-link" href="/about">About</a> 
-                        #DON'T NEED AN ABOUT PAGE, DISPLAY ALL INFO ON HOME PAGE -->
+                        #DON'T NEED AN ABOUT PAGE, DISPLAY ALL INFO ON homepage PAGE -->
                   </div>
                   <!-- Navbar Right Side -->
                   <div class="navbar-nav">
@@ -39,9 +39,9 @@
                       <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
                       <!-- Dashboard Displayed here -->
                       <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
-                      <!-- Intergrate logout function, redirect to home page  -->
+                      <!-- Intergrate logout function, redirect to homepage page  -->
                     <!-- {% else %} -->
-                    <!-- User is not authenticated. Stay on the home page -->
+                    <!-- User is not authenticated. Stay on the homepage page -->
                       <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
                       <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
                     <!-- {% endif %} -->
