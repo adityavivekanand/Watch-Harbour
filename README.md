@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/CommunityOfCoders/Inheritance-2024">
-    <img src="./Untitled.png" alt="CoC Inheritance 2024" width="500" height="166">
+    <img src="assets/inheritance logo.png" alt="CoC Inheritance 2024" width="500" height="166">
   </a>
   <br>
   Watch Harbour
